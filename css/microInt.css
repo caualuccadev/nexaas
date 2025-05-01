@@ -1,0 +1,7 @@
+/* estilo das micro interações do app */
+@import url(app.css);
+
+/*side bar */
+.navItemLink:active{
+    background-color: var(--primaryActive);
+}
