@@ -1,0 +1,38 @@
+/* definindo a root do projeto */
+:root{
+    /* ui colors */
+    --primary: #15A6D5;
+    --primaryHover: #1185AA;
+    --primaryActive: #D7F0F9;
+
+    /**** light mode -- default */
+    --bgLight: #ffff;
+    --bgSection: #F5F5F5;
+    --textNormal: #1C1C22;
+    --textDisable: #D3D3D7;
+    --redLight: #FD1C1C;
+
+    /**** dark mode */
+    --bgDark: #1D242D;
+    --bgSection_dark: #151A20;
+    --textDdark: #D3D3D7;
+    --redDark: #F94343;
+
+
+    /* spaces padding and margins */
+    --paddingSection: 2rem;
+    --paddingComponent: 1rem;
+    --marginSection: 2rem;
+
+
+    /* font styles */
+    --fontFamily: 'Roboto', 'Arial', 'sans-serif';
+    --fontsizeH1: ;
+    --fontsizeH2: ;
+    --FontsizeH3: ;
+    --fontsizeTexts: ;
+    --fontsizeNav: ;
+}
+
+
+/* styles for global components */
