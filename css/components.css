@@ -1,0 +1,61 @@
+@import url('app.css');
+
+/* side bar styles */
+.sidebar{
+    grid-area: aside;
+    width: 16rem; height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: start; justify-content: space-between;
+    border-right: 1px solid var(--primary);
+
+}
+
+.headerSideBar{
+    display: flex; place-content: center;
+    padding: var(--paddingComponent);
+    width: 100%;
+    border-bottom: 1px solid var(--primary);
+}
+
+.navContainer, .sideBar_navUL{
+    display: flex; flex-direction: column;
+    width: 100%; height: 100%;
+    gap: 1rem;
+}
+
+.sideBar_navUL{ padding-top: 2rem;}
+
+
+.sidebar_navItem{
+    display: flex; align-items: center;
+    cursor: pointer;
+     gap: .5rem;
+    color: var(--textNormal);
+    width: 100%;
+}
+
+.navItemLink{ width: 100%; height: 100%; padding: .5rem 1rem;}
+
+.sidebar_navItem img{width: 20px;}
+
+.footer_sidebar{
+    display: flex; align-items: start; 
+    width: 100%;
+    
+}
+
+.buttonFooter{
+    display: flex; align-items: center;
+    width: 100%; gap: .5rem;
+    color: var(--textNormal);
+    padding: .5rem 1rem 1rem 1rem;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid var(--primary);
+    outline: none; font-size: clamp(1rem, 1vw, 1.2rem);
+    cursor: pointer;
+    transition: color background-color ease-in-out .3s;
+}
+
+.buttonFooter img{ width: 20px;}
+

@@ -1,3 +1,9 @@
+/* importando os componentes */
+@import url('components.css');
+@import url('microInt.css');
+
+
+
 /* definindo a root do projeto */
 :root{
     /* ui colors */
@@ -35,4 +41,24 @@
 }
 
 
+/* reset defaults styles */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+ul{ list-style-type: none;}
+a{text-decoration: none;}
+
+
 /* styles for global components */
+.root{
+    display: grid;
+    grid-template-areas:
+    "aside header"
+    "aside main";
+    width: 100%; height: 100%;
+    position: relative;
+    font-family: var(--fontFamily);
+}
+
