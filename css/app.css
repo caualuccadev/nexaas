@@ -62,3 +62,19 @@ a{text-decoration: none;}
     font-family: var(--fontFamily);
 }
 
+
+
+
+
+
+@media screen and ( max-width: 1000px ){
+    .sidebar{display: none;}
+    .headerMobile{display: flex};
+}
+
+@media screen and ( min-width: 1001px ){
+    .sidebar{display: flex;}
+
+    .headerMobile{display: none;};
+}
+    

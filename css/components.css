@@ -59,3 +59,79 @@
 
 .buttonFooter img{ width: 20px;}
 
+
+
+
+
+/* mobile header */
+.headerMobile{
+    display: flex; flex-direction: column;
+    width: 100vw;
+    padding: var(--paddingComponent);
+    gap: 1rem;
+    border-bottom: 1px solid var(--primary);
+}
+
+.navUser{
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+.userNav_mobile, .profileContainer{
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+.bellContainer{position: relative;}
+
+.bellContainer::after{
+    position: absolute; content: '';
+    top: -10%; right: -2%; 
+    width: 12px; height: 12px;
+    background-color: var(--redDark);
+    border: 2px solid white; border-radius: 50%;
+}
+
+.profileContainer{ gap: .25rem; margin-left: 1.5rem;cursor: pointer;}
+
+.imageProfile{border-radius: 50%;}
+
+.mobileIcons{
+    display: flex; align-items: center; justify-content: center;
+    border: none; outline: none; background-color: transparent;
+    cursor: pointer;
+}
+
+.buttonMenu{
+    display: flex; align-items: center;justify-content: center;
+    min-width: 15px; max-width: 40px;
+    height: auto;
+    object-fit: cover; 
+    background-color: transparent; border: none; outline: none;
+    cursor: pointer;
+}
+
+.buttonMenu img{
+    display: flex; align-self: center; justify-self: center;
+    width: 100%;
+}
+
+.searchContainer{
+    display: flex; position: relative;
+}
+
+#searchBar{
+    width: 100%; 
+    padding: .5rem 2.5rem;
+    height: 40px;
+    border-radius: 2rem;
+    border: 2px solid var(--textDisable);
+}
+
+#searchBar::placeholder{
+    font-size: clamp(1rem, 1vw, 1.2rem);
+}
+
+.searchIcon{
+    position: absolute;
+    top: 50%; left: 2%; transform: translateY(-50%);
+    height: 20px;
+}

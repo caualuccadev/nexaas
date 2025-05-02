@@ -5,3 +5,9 @@
 .navItemLink:active{
     background-color: var(--primaryActive);
 }
+
+
+/* search bar */
+#searchBar:focus{
+    outline-color: var(--primary);
+}
