@@ -12,10 +12,12 @@
 
 .headerSideBar{
     display: flex; place-content: center;
-    padding: var(--paddingComponent);
+    padding: 1rem;
     width: 100%;
     border-bottom: 1px solid var(--primary);
 }
+
+.headerSideBar img{ padding: .58rem; }
 
 .navContainer, .sideBar_navUL{
     display: flex; flex-direction: column;
@@ -134,4 +136,15 @@
     position: absolute;
     top: 50%; left: 2%; transform: translateY(-50%);
     height: 20px;
+}
+
+
+/* header for desktop */
+.headerDesktop{
+    grid-area: header;
+    width: 100%;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--primary);
+    margin: 0;
 }

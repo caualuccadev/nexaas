@@ -1,5 +1,6 @@
 import { CreateSideBar } from "./components/sideBar.js";
 import { headerMobile } from "./components/headerMobile.js";
+import { headerDesktop } from "./components/headerDesktop.js";
 
 
 const bodyRoot = document.querySelector('body');
@@ -10,6 +11,8 @@ window.addEventListener('load', () =>{
 
     bodyRoot.appendChild(headerMobile());
     bodyRoot.appendChild(CreateSideBar());
+
+    bodyRoot.appendChild(headerDesktop());
 
     
 

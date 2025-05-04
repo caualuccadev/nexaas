@@ -19,7 +19,7 @@ function buttonMenu(){
 
 };
 
-function logoHeader(){
+export function logoHeader(){
     const imgLogo = document.createElement('img');
     imgLogo.setAttribute('src', '../assets/images/Logo_Nexaas.png');
     imgLogo.setAttribute('alt', 'Nexaas logo');
@@ -27,7 +27,7 @@ function logoHeader(){
     return imgLogo;
 };
 
-function notificationButton(){
+export function notificationButton(){
     const buttonNotification = document.createElement('button');
     buttonNotification.setAttribute('aria-label', 'Abrir notificações');
     buttonNotification.classList.add('mobileIcons');
@@ -42,7 +42,7 @@ function notificationButton(){
     return buttonNotification;
 }
 
-function profilePicture(){
+export function profilePicture(){
     const profileImg = document.createElement('img');
     profileImg.setAttribute('alt', 'Foto de perfil');
     profileImg.setAttribute('src', '../assets/images/avatar-admin.png');
@@ -62,7 +62,7 @@ function profilePicture(){
     return profileContainer;
 };
 
-function asideHeader_mobile() {
+export function asideHeader_mobile() {
     const userNav = document.createElement('div');
     userNav.classList.add('userNav_mobile');
 
@@ -72,8 +72,8 @@ function asideHeader_mobile() {
     return userNav;
 };
 
-function headerMobile_footer(){
-    const footerHeader = document.createElement('footer');
+export function searchBar_container(){
+    const footerHeader = document.createElement('section');
     footerHeader.classList.add('searchContainer');
 
     const searchIcon = document.createElement('img');
@@ -92,7 +92,7 @@ function headerMobile_footer(){
     return footerHeader;
 }
 
-function navigationUser(){
+export function navigationUser(){
     const navUser = document.createElement('section');
     navUser.classList.add('navUser');
 
@@ -108,7 +108,7 @@ export function headerMobile(){
     headerMobile.classList.add('headerMobile');
 
     headerMobile.appendChild(navigationUser());
-    headerMobile.appendChild(headerMobile_footer());
+    headerMobile.appendChild(searchBar_container());
 
     return headerMobile;
 }
