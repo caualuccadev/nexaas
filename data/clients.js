@@ -1,6 +1,4 @@
-{
-    "customers": [
-      {
+const customers = [{
         "name": "Márcio Braga",
         "email": "marcio.braga@minhaempresa.com.br",
         "phone": "(21) 98987-7650",
@@ -56,6 +54,5 @@
         "subscription_amount": 950.99,
         "profile_url": null
       }
-    ]
-  }
+    ];
   
