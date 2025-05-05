@@ -11,3 +11,13 @@
 #searchBar:focus{
     outline-color: var(--primary);
 }
+
+/* animation for loading */
+@keyframes spinningImg{
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+
+.loadingImg{
+    animation: spinningImg 1s linear infinite;
+}
