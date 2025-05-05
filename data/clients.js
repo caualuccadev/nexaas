@@ -1,4 +1,4 @@
-const customers = [{
+export const customers = [{
         "name": "Márcio Braga",
         "email": "marcio.braga@minhaempresa.com.br",
         "phone": "(21) 98987-7650",
